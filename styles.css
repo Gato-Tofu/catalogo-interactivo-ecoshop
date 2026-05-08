@@ -104,3 +104,10 @@ ul {
 [data-theme="dark"] .product-card.agotado .card-img {
   filter: brightness(.55) grayscale(.7);
 }
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-size: 1rem;
+}
