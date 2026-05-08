@@ -33,3 +33,44 @@ button {
 ul {
   list-style: none;
 }
+
+:root {
+  --clr-primary:      #2d6a4f;
+  --clr-primary-lt:   #40916c;
+  --clr-primary-xlt:  #d8f3dc;
+  --clr-accent:       #f4a261;
+  --clr-danger:       #e63946;
+  --clr-danger-lt:    #fde8ea;
+  --clr-warn:         #e9c46a;
+
+  --clr-bg:           #f8faf8;
+  --clr-surface:      #ffffff;
+  --clr-surface-2:    #f0f4f1;
+  --clr-border:       #d9e4da;
+  --clr-text:         #1b2d22;
+  --clr-text-2:       #4a6558;
+  --clr-text-3:       #8aab97;
+  --clr-muted:        #c5d8cd;
+
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 12px rgba(0,0,0,.10);
+  --shadow-lg:  0 12px 30px rgba(0,0,0,.13);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   18px;
+  --radius-pill: 999px;
+
+  --ease-out:    cubic-bezier(.22,1,.36,1);
+  --ease-spring: cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:    150ms;
+  --dur-base:    250ms;
+  --dur-slow:    400ms;
+
+  --sidebar-w: 280px;
+  --header-h:  64px;
+  --stock-max: 15;
+}
