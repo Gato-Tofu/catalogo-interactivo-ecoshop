@@ -416,3 +416,25 @@ body {
   color: var(--clr-text-2);
   line-height: 1.55;
 }
+
+.btn-reset {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: var(--clr-surface);
+  border: 1.5px dashed var(--clr-border);
+  color: var(--clr-text-3);
+  font-size: .875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--dur-fast);
+}
+
+.btn-reset:hover {
+  border-color: var(--clr-danger);
+  color: var(--clr-danger);
+  background: var(--clr-danger-lt);
+}
