@@ -111,3 +111,52 @@ body {
   color: var(--clr-text);
   font-size: 1rem;
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.brand-leaf {
+  font-size: 1.5rem;
+  animation: sway 3s ease-in-out infinite;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  letter-spacing: -.5px;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  max-width: 500px;
+  justify-content: flex-end;
+}
