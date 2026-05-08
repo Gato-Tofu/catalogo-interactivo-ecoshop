@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoShop — Catálogo Verde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-leaf">🌿</span>
+        <span class="brand-name">EcoShop</span>
+      </div>
+      <div class="header-controls">
+        <div class="search-wrapper">
+          <i class="fa fa-search search-icon"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos…" autocomplete="off" />
+          <button class="search-clear" id="searchClear" aria-label="Limpiar"><i class="fa fa-times"></i></button>
+        </div>
+        <button class="btn-icon" id="themeToggle" aria-label="Cambiar tema">
+          <i class="fa fa-moon" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <section class="panel">
+        <h2 class="panel-title">Estadísticas</h2>
+        <div class="stat-card"><span class="stat-icon"><i class="fa fa-boxes"></i></span>
+          <div class="stat-info"><span class="stat-label">Productos</span><span class="stat-value" id="statTotal">0</span></div></div>
+        <div class="stat-card"><span class="stat-icon"><i class="fa fa-dollar-sign"></i></span>
+          <div class="stat-info"><span class="stat-label">Valor inventario</span><span class="stat-value" id="statValor">S/ 0.00</span></div></div>
+        <div class="stat-card"><span class="stat-icon"><i class="fa fa-tag"></i></span>
+          <div class="stat-info"><span class="stat-label">Categorías</span><span class="stat-value" id="statCategorias">0</span></div></div>
+        <div class="stat-card"><span class="stat-icon"><i class="fa fa-cart-shopping"></i></span>
+          <div class="stat-info"><span class="stat-label">Compras sesión</span><span class="stat-value" id="statCompras">0</span></div></div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">Categorías</h2>
+        <div class="filter-buttons" id="filterButtons"></div>
+      </section>
+
+      <section class="panel" id="detailPanel">
+        <h2 class="panel-title">Detalle</h2>
+        <div id="detailContent"><p class="placeholder-msg">Haz clic en un producto para ver su información.</p></div>
+      </section>
+
+      <button class="btn-reset" id="resetStock">
+        <i class="fa fa-rotate-left"></i> Reiniciar stock
+      </button>
+
+    </aside>
+
+    <!-- CATÁLOGO -->
+    <section class="catalog-section">
+      <div class="catalog-header">
+        <h1 class="catalog-title" id="catalogTitle">Todos los productos</h1>
+        <span class="catalog-count" id="catalogCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <i class="fa fa-leaf"></i>
+        <p>No se encontraron productos.</p>
+        <small>Intenta con otro término o categoría.</small>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOASTS -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- SCRIPTS (orden importa) -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
