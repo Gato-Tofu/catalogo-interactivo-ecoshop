@@ -74,3 +74,33 @@ ul {
   --header-h:  64px;
   --stock-max: 15;
 }
+
+[data-theme="dark"] {
+  --clr-primary:     #74c69d;
+  --clr-primary-lt:  #95d5b2;
+  --clr-primary-xlt: #1b4332;
+  --clr-danger:      #f07070;
+  --clr-danger-lt:   #3b1a1a;
+  --clr-warn:        #e9c46a;
+
+  --clr-bg:          #0f1c14;
+  --clr-surface:     #162519;
+  --clr-surface-2:   #1e3323;
+  --clr-border:      #2d4a38;
+  --clr-text:        #e8f4ec;
+  --clr-text-2:      #a3c4ad;
+  --clr-text-3:      #5e8a6e;
+  --clr-muted:       #2d4a38;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.4);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.45);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,.55);
+}
+
+[data-theme="dark"] .card-img {
+  filter: brightness(.88) saturate(.95);
+}
+
+[data-theme="dark"] .product-card.agotado .card-img {
+  filter: brightness(.55) grayscale(.7);
+}
