@@ -438,3 +438,25 @@ body {
   color: var(--clr-danger);
   background: var(--clr-danger-lt);
 }
+
+.catalog-section {
+  min-width: 0;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.catalog-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--clr-text);
+}
+
+.catalog-count {
+  font-size: .875rem;
+  color: var(--clr-text-3);
+}
