@@ -483,3 +483,39 @@ body {
   font-size: 1.1rem;
   margin-bottom: 6px;
 }
+
+.product-card {
+  background: var(--clr-surface);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(45,106,79,.10);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  animation: cardIn var(--dur-slow) var(--ease-out) both;
+  transition: transform var(--dur-base) var(--ease-spring), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-fast), opacity var(--dur-base);
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--clr-primary-lt);
+}
+
+.product-card.selected {
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 3px var(--clr-primary-xlt), var(--shadow-lg);
+  transform: translateY(-4px) scale(1.025);
+}
+
+.product-card.agotado {
+  opacity: .55;
+  filter: grayscale(.6);
+  cursor: default;
+}
+
+.product-card.agotado:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(45,106,79,.10);
+}
