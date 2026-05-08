@@ -319,3 +319,50 @@ body {
   line-height: 1.2;
   font-variant-numeric: tabular-nums;
 }
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--clr-text-2);
+  border: 1.5px solid transparent;
+  text-align: left;
+  transition: background var(--dur-fast), border-color var(--dur-fast), color var(--dur-fast), transform var(--dur-fast);
+}
+
+.btn-filter:hover {
+  background: var(--clr-surface-2);
+  border-color: var(--clr-border);
+  transform: translateX(3px);
+}
+
+.btn-filter.active {
+  background: var(--clr-primary-xlt);
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.filter-badge {
+  margin-left: auto;
+  background: var(--clr-surface-2);
+  color: var(--clr-text-3);
+  border-radius: var(--radius-pill);
+  padding: 1px 8px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.btn-filter.active .filter-badge {
+  background: var(--clr-primary);
+  color: white;
+}
