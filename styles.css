@@ -219,3 +219,22 @@ body {
 .search-clear:hover {
   color: var(--clr-danger);
 }
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--clr-surface-2);
+  border: 1.5px solid var(--clr-border);
+  color: var(--clr-text-2);
+  display: grid;
+  place-items: center;
+  font-size: .875rem;
+  transition: background var(--dur-fast), color var(--dur-fast), transform var(--dur-fast) var(--ease-spring);
+}
+
+.btn-icon:hover {
+  background: var(--clr-primary-xlt);
+  color: var(--clr-primary);
+  transform: rotate(15deg) scale(1.1);
+}
